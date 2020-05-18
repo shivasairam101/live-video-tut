@@ -4,7 +4,7 @@ import * as socketIo from 'socket.io'; // new
 
 export class ChatServer {
 
-    public static readonly PORT:number = 5000;
+    public static readonly PORT:any = process.env.PORT || 5000;
     private app: express.Application;
     private port: string | number;
     private server: Server;
