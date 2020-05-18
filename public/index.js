@@ -1,4 +1,4 @@
-var socket = io.connect('https://innovationday-app.herokuapp.com/'); 
+var socket = io.connect(`http://127.0.0.1:${process.env.PORT || 5000}`); 
 
 var answersFrom = {}, offer;
 var peerConnection = window.RTCPeerConnection ||
