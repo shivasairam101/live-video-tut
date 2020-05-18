@@ -17,10 +17,11 @@ var sessionDescription = window.RTCSessionDescription ||
     navigator.msGetUserMedia;
 
 var pc = new peerConnection({
-    iceServers: [
-        {
-          urls: ["stun:stun.l.google.com:19302"]
-        }
+    iceServers:[
+        {urls:["stun:stun.l.google.com:19302"]},
+        {urls:["stun:stun1.l.google.com:19302"]},
+        {urls:["stun:stun1.l.google.com:19305"]},
+        {urls:["stun:stun2.l.google.com:19302"]}
       ]
 });
 
